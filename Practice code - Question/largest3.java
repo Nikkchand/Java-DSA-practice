@@ -1,4 +1,4 @@
-public class sum3 {
+public class largest3 {
     public static void main(String[] args) {
         int A=1 , B = 3 , C = 6;
 

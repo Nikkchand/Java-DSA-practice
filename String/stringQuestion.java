@@ -78,6 +78,49 @@ public static String toUpperCase(String str) {
     } 
     return sb.toString();
 }
+
+
+
+
+
+// String compression
+public static String compress(String str){
+    String newStr = ""; //empty string
+    for(int i =0; i<str.length();i++){ 
+        int count = 1;
+        while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)) {
+          count++;
+          i++;  
+        }
+        newStr += str.charAt(i);
+        if(count >1){
+            newStr += count;
+        }
+    }
+    return newStr;
+}
+
+
+// Compression via string builder
+public static String compression(String str){
+    StringBuilder sb = new StringBuilder();
+
+    for(int i = 0 ; i<str.length();i++){
+        int count = 1;
+         while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)){
+            count++;
+            i++;
+         }
+         sb.append(str.charAt(i));
+
+         if(count > 1){
+            sb.append(count);
+         }
+    }
+    return sb.toString();
+}
+
+
 public static void main(String args[]){
     //isPalindrome
     // String str;
@@ -96,7 +139,16 @@ public static void main(String args[]){
 
 
 //toUpperCase
-    String str = "hi, i am rahul chand";
-    System.out.println(toUpperCase(str));
+    // String str = "hi, i am rahul chand";
+    // System.out.println(toUpperCase(str));
+
+
+
+// String compression
+
+    String str = "aaabbcccccddd";
+    // System.out.print(compress(str));
+    System.out.println(compression(str));
+
     }
 }

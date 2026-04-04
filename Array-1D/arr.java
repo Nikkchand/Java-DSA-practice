@@ -13,6 +13,6 @@ public class arr {
     }
     public static void main(String[] args) {
         int nums[]={2,4,6};
-      System.out.print(solution(true));
+      System.out.print(solution(nums));
     }
 }

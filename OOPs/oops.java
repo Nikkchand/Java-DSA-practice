@@ -1,4 +1,3 @@
-
 public class oops {
 
     public static void main(String[] args) {
@@ -32,7 +31,7 @@ class animal {
     String type;
 
     void runFast() {
-        if (name == "cheetah") {
+        if (name == "Cheetah") {
             System.out.println("Yes");
         } else {
             System.out.println("No");
@@ -42,5 +41,4 @@ class animal {
     void print() {
         System.out.println(name + "," + legs + "," + color + "," + type);
     }
-
 }
